@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap");
-
 * {
     margin: 0;
     padding: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
 }
 
 .navbar {
@@ -35,6 +38,7 @@ header .title {
     justify-content: center;
     height: 48px;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 31%);
+    font-style: italic;
 }
 
 .title h1 {
@@ -65,44 +69,68 @@ ul {
 
 .principal {
     background-color: rgb(128 45 45);
+    padding-bottom: 8px;
 }
 
 .banner img {
     width: 100%;
 }
 
-.services-list ul {
+.list ul {
     position: absolute;
     margin: 30% 0% 0% 6%;
     font-size: 2em;
     display: flex;
     flex-direction: column;
     background-color: rgb(195 195 195 / 66%);
-    font-weight: bold;
+    font-weight: 600;
     padding: 18px;
     border-radius: 8px;
     color: #000000e3;
     width: auto;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 31%);
+    font-family: Roboto, sans-serif;
 }
 
-.services-list ul li {
+.list ul li {
     padding: 6px 0px;
+}
+
+.about {
+    padding: 40px 0px 60px 0px;
+    text-align: center;
+    background-color: rgb(233 233 233 / 40%);
+}
+
+.about h2 {
+    margin-bottom: 48px;
+    color: rgb(136 34 34);
+}
+
+.about .about-description {
+    margin: 0px 80px 0px 80px;
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
 }
 
 .services {
     background-color: rgb(128 45 45);
     padding: 40px 0px 50px 0px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 18px;
+    color: #ffffff;
 }
 
 .cards-container {
-    padding: 10px 0px 10px 0px;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    width: 100%;
 }
 
 .card {
-    background-color: white;
+    background-color: #ffffff;
     box-shadow: 0 4px 28px 0 rgb(0 0 0 / 63%);
     transition: 0.3s;
     border-radius: 8px;
@@ -111,9 +139,38 @@ ul {
     flex-direction: column;
     display: flex;
     width: 22%;
-    height: 240px;
-    margin-left: 8%;
+    height: 242px;
+    margin-left: 8.6%;
     margin-top: 2%;
+    float: left;
+    font-family: Roboto, sans-serif;
+    position: relative;
+}
+
+.card .card-description {
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.card-description ul li {
+    margin: 10px 0px 10px 0px;
+    font-size: 19px;
+}
+
+.card:hover .card-description {
+    opacity: 1;
 }
 
 .card img {
@@ -124,4 +181,49 @@ ul {
 .card .info {
     font-size: 18px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .head {
+        position: relative;
+    }
+
+    header .title {
+        font-size: 0.7em;
+        margin: 12px 10px;
+        width: 195px;
+        padding: 0% 4%;
+        height: 50px;
+    }
+
+    .banner img {
+        height: 224px;
+    }
+
+    .list ul {
+        margin: 110px 0px 0px 10px;
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+
+    .services {
+        padding: 20px 0px 40px 0px;
+    }
+
+    .card {
+        width: 41%;
+        height: 150px;
+        margin-left: 6%;
+        margin-top: 6%;
+    }
+
+    .card img {
+        width: 72px;
+        margin-bottom: 10px;
+    }
+
+    .card .info {
+        font-size: 16px;
+        text-align: center;
+    }
 }

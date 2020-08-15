@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 45px;
@@ -14,7 +19,7 @@ h2 {
 }
 
 .head {
-    padding: 36px 0px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     background-color: rgb(230 230 230 / 82%);
@@ -46,6 +51,7 @@ header .title {
 }
 
 .menu-icon {
+    display: none;
     position: absolute;
     margin: -15px 20px;
 }
@@ -57,14 +63,20 @@ ul {
 }
 
 .menu-items ul {
-    display: none;
-    margin: 0 auto 0 auto;
-    flex-direction: column;
+    display: flex;
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    margin: 24px 0px 0px 100px;
 }
 
 .menu-items ul li {
-    width: 100px;
-    margin: 0.2em;
+    padding-right: 70px;
+    cursor: pointer;
+}
+
+.menu-items ul li:hover {
+    font-size: 23px;
 }
 
 .principal {
@@ -79,7 +91,7 @@ ul {
 .list ul {
     position: absolute;
     margin: 30% 0% 0% 6%;
-    font-size: 2em;
+    font-size: 28px;
     display: flex;
     flex-direction: column;
     background-color: rgb(195 195 195 / 66%);
@@ -96,30 +108,30 @@ ul {
     padding: 6px 0px;
 }
 
-.about {
+#about {
     padding: 40px 0px 60px 0px;
     text-align: center;
     background-color: rgb(233 233 233 / 40%);
 }
 
-.about h2 {
+#about h2 {
     margin-bottom: 48px;
     color: rgb(136 34 34);
 }
 
-.about .about-description {
+#about .about-description {
     margin: 0px 80px 0px 80px;
     font-size: 28px;
     font-family: Roboto, sans-serif;
 }
 
-.services {
+#services {
     background-color: rgb(128 45 45);
     padding: 40px 0px 50px 0px;
     text-align: center;
 }
 
-.services h2 {
+#services h2 {
     margin-bottom: 18px;
     color: #ffffff;
 }
@@ -183,6 +195,124 @@ ul {
     text-align: center;
 }
 
+#projects {
+    padding: 30px 0px 60px 0px;
+    text-align: center;
+    background-color: rgb(233 233 233 / 40%);
+}
+
+#projects h2 {
+    margin-bottom: 42px;
+    color: rgb(136 34 34);
+}
+
+.slideshow {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.slider {
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
+}
+
+.slick-list {
+    height: 500px;
+}
+
+.slideshow .item {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.slideshow .item img {
+    width: 100%;
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transform: scale(1.2);
+}
+
+.slideshow .item .slick-active img {
+    transform: scale(1);
+}
+
+.slick-prev, .slick-next {
+    color: #750000e0;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: rgb(121 0 0);
+    font-size: 30px;
+}
+
+.slick-prev {
+    left: -160px;
+}
+
+.slick-next {
+    right: -140px;
+}
+
+.slick-dots {
+    bottom: -46px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
+
+#contact {
+    padding: 40px 0px 60px 0px;
+    background-color: rgb(128 45 45);
+}
+
+#contact h2 {
+    margin-bottom: 70px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contact .contact-info {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+
+.contact-info .info-item:first-child {
+    margin: 0px 70px 0px 60px;
+}
+
+.contact-info p, .contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info .cellphone {
+    display: flex;
+}
+
+.contact-info .cellphone img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: rgb(128 45 45);
+    border-top: 1px solid white;
+}
+
+footer .copyright {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
 @media (max-width: 600px) {
     .head {
         position: relative;
@@ -206,7 +336,7 @@ ul {
         padding: 6px 10px;
     }
 
-    .services {
+    #services {
         padding: 20px 0px 40px 0px;
     }
 

@@ -9,13 +9,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="images/icon.png">
     <title>Doutor Soluções</title>
 
 </head>
-
-</html>
 
 <body>
     <header>
@@ -24,144 +24,245 @@
                 <div class="menu-icon">
                     <img src="images/menu.png">
                 </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="title">
                 <h1>Doutor Soluções</h1>
             </div>
-            <div class="menu-items">
-                <ul>
-                    <li>Sobre</li>
-                    <li>Serviços</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
-                </ul>
-            </div>
         </div>
     </header>
-    <section class="principal">
-        <div class="banner">
-            <div class="list">
-                <ul>
-                    <li>Gerenciamento de obras</li>
-                    <li>Serviços de construção</li>
-                    <li>Reforma residencial e comercial</li>
-                </ul>
-            </div>
-            <img src="images/banner.jpg">
-        </div>
-    </section>
-    <section class="about">
-        <h2>Sobre</h2>
-        <div class="about-description">
-            <p>
-                A Doutor Soluções foi criada para abrir as portas dos serviços de construção, reformas, gerenciamento de
-                obras e manutenção de imoveis residenciais e comerciais em geral, com novos conceitos de qualidade,
-                segurança e garantia. Sempre alinhado com as expectativas de nossos clientes.
-            </p>
-            <br>
-            <p>
-                Encaramos cada projeto de forma singular e profissional, alguns de nosso diferenciais são a empatia e o entusiasmo
-                que nos acompanha a todo momento, o que nos permite uma realização inovadora e segura, sempre comprometidos com o resultado final.
-            </p>
-            <br>
-            <p>
-                Podemos não só atender as necessidades de nossos clientes, mas tambem surpreendê-los com nossas soluções
-                especializadas.
-            </p>
-        </div>
-    </section>
-    <section class="services">
-        <h2>Serviços</h2>
-        <div class="cards-container">
-            <div class="card">
-                <img src="images/project.png">
-                <div class="info">
-                    <h4>Gerenciamento</h4>
-                    <h4>e contrução de obras</h4>
-                </div>
-                <div class="card-description">
+    <main>
+        <section class="principal">
+            <div class="banner">
+                <div class="list">
                     <ul>
-                        <li>Planejamento da obra</li>
-                        <li>Estimativa de gastos</li>
-                        <li>Cronograma físico e financeiro</li>
-                        <li>Construção e reformas</li>
-                        <li>Contratação de mão de obra</li>
-                        <li>Acompanhamento de mão de obra</li>
+                        <li>Gerenciamento de obras</li>
+                        <li>Serviços de construção</li>
+                        <li>Reforma residencial e comercial</li>
                     </ul>
                 </div>
+                <img src="images/banner.jpg">
             </div>
-            <div class="card">
-                <img src="images/electric.png">
-                <div class="info">
-                    <h4>Elétrica</h4>
+        </section>
+        <section id="about">
+            <h2>Sobre</h2>
+            <div class="about-description">
+                <p>
+                    A Doutor Soluções foi criada para abrir as portas dos serviços de construção, reformas,
+                    gerenciamento de
+                    obras e manutenção de imoveis residenciais e comerciais em geral, com novos conceitos de qualidade,
+                    segurança e garantia. Sempre alinhado com as expectativas de nossos clientes.
+                </p>
+                <br>
+                <p>
+                    Encaramos cada projeto de forma singular e profissional, alguns de nosso diferenciais são a empatia
+                    e o
+                    entusiasmo
+                    que nos acompanham a todo momento, o que nos permite uma realização inovadora e segura, sempre
+                    comprometidos com o resultado final.
+                </p>
+                <br>
+                <p>
+                    Podemos não só atender as necessidades de nossos clientes, mas tambem surpreendê-los com nossas
+                    soluções
+                    especializadas.
+                </p>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Serviços</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/project.png">
+                    <div class="info">
+                        <h4>Gerenciamento</h4>
+                        <h4>e contrução de obras</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Planejamento da obra</li>
+                            <li>Estimativa de gastos</li>
+                            <li>Cronograma físico e financeiro</li>
+                            <li>Construção e reformas</li>
+                            <li>Contratação de mão de obra</li>
+                            <li>Acompanhamento de mão de obra</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card-description">
-                    <ul>
-                        <li>Instalação elétrica</li>
-                        <li>Colocação de luminárias</li>
-                        <li>Ligação de chuveiro, bomba, ar-condicionado, etc.</li>
-                        <li>Reparos elétricos</li>
-                    </ul>
+                <div class="card">
+                    <img src="images/electric.png">
+                    <div class="info">
+                        <h4>Elétrica</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Instalação elétrica</li>
+                            <li>Colocação de luminárias</li>
+                            <li>Ligação de chuveiro, bomba, ar-condicionado, etc.</li>
+                            <li>Reparos elétricos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/carpentry.png">
+                    <div class="info">
+                        <h4>Carpintaria</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Reforma de telhados</li>
+                            <li>Colocação de assoalhos e decks</li>
+                            <li>Colocação de forros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/painting.png">
+                    <div class="info">
+                        <h4>Pintura</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Pintura de fachadas, muros ou ambientes internos, priorizando a limpeza e
+                                organização</li>
+                            <li>Pintura de portas</li>
+                            <li>Pintura de grades</li>
+                            <li>Pintura personalizada em paredes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hydraulic.png">
+                    <div class="info">
+                        <h4>Hidráulica</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Reparos em hidráulica</li>
+                            <li>Sifões, torneiras e bacias</li>
+                            <li>Descarga hidra e caixa acoplada</li>
+                            <li>Limpeza de caixas d'agua</li>
+                            <li>Instalação de aquecedores</li>
+                            <li>Bombas de piscina e poço</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/gardening.png">
+                    <div class="info">
+                        <h4>Jardinagem</h4>
+                    </div>
+                    <div class="card-description">
+                        <ul>
+                            <li>Corte de grama</li>
+                            <li>Poda de árvores</li>
+                            <li>Plantio de grama e mudas</li>
+                            <li>Preparação de terra</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/carpentry.png">
-                <div class="info">
-                    <h4>Carpintaria</h4>
-                </div>
-                <div class="card-description">
-                    <ul>
-                        <li>Reforma de telhados</li>
-                        <li>Colocação de assoalhos e decks</li>
-                        <li>Colocação de forros</li>
-                    </ul>
+        </section>
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="slideshow">
+                <div class="slider">
+                    <div class="item">
+                        <img src="images/projects/house4.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house5.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house2.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house6.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house7.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house8.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house9.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house10.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house11.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house12.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house13.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house14.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house15.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house16.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house17.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house18.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house19.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house20.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house21.jpg" />
+                    </div>
+                    <div class="item">
+                        <img src="images/projects/house22.jpg" />
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/painting.png">
-                <div class="info">
-                    <h4>Pintura</h4>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Doutor Soluções</h3>
+                    <p>CNPJ: 32.427.002/0001-58</p>
+                    <div class="cellphone"><img src="images/whatsapp.png" /><p>Cel: (11) 99501-6472</p></div>
+                    <p>E-mail: doutorsolucoes@gmail.com</p>
                 </div>
-                <div class="card-description">
-                    <ul>
-                        <li>Pintura de fachadas, muros ou ambientes internos, priorizando a limpeza e
-                            organização</li>
-                        <li>Pintura de portas</li>
-                        <li>Pintura de grades</li>
-                        <li>Pintura personalizada em paredes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/hydraulic.png">
-                <div class="info">
-                    <h4>Hidráulica</h4>
-                </div>
-                <div class="card-description">
-                    <ul>
-                        <li>Reparos em hidráulica</li>
-                        <li>Sifões, torneiras e bacias</li>
-                        <li>Descarga hidra e caixa acoplada</li>
-                        <li>Limpeza de caixas d'agua</li>
-                        <li>Instalação de aquecedores</li>
-                        <li>Bombas de piscina e poço</li>
-                    </ul>
+                <div class="info-item">
+                    <h3>Endereço</h3>
+                    <p>Rua Coapa nº 64
+                    <p>Bairro Jardim Leonor, Cotia/SP</p>
+                    <p>CEP: 06700-241</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/gardening.png">
-                <div class="info">
-                    <h4>Jardinagem</h4>
-                </div>
-                <div class="card-description">
-                    <ul>
-                        <li>Corte de grama</li>
-                        <li>Poda de árvores</li>
-                        <li>Plantio de grama e mudas</li>
-                        <li>Preparação de terra</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright"><p>© Doutor Soluções - 2020, todos os direitos reservados.</p></div>
+    </footer>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
+
+</html>

@@ -290,7 +290,7 @@ ul {
 .slideshow .item img {
     width: 100%;
     transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .slideshow .item .slick-active img {

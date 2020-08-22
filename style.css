@@ -9,8 +9,8 @@ a {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 42px;
 }
 
 .navbar {
@@ -53,7 +53,21 @@ header .title {
 .menu-icon {
     display: none;
     position: absolute;
-    margin: -15px 20px;
+    margin: 22px 40px;
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.menu-icon img {
+    cursor: pointer;
+    width: 34px;
+    margin-top: 2px;
+}
+
+.menu-icon a {
+    cursor: pointer;
+    margin: 5px 0px 0px 20px;
 }
 
 ul {
@@ -64,7 +78,7 @@ ul {
 
 .menu-items ul {
     display: flex;
-    font-size: 22px;
+    font-size: 23px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
     margin: 24px 0px 0px 100px;
@@ -76,7 +90,53 @@ ul {
 }
 
 .menu-items ul li:hover {
-    font-size: 23px;
+    font-size: 24px;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(230 230 230);
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0 2px 60px 0 rgb(0 0 0 / 10%), 0 2px 60px 0 rgb(0 0 0 / 30%);
+}
+
+.sidenav a {
+    padding: 48px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgba(150, 52, 72);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -28px;
+    right: 84px;
+    font-size: 36px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .principal {
@@ -120,7 +180,7 @@ ul {
 }
 
 #about .about-description {
-    margin: 0px 80px 0px 80px;
+    margin: 0px 80px;
     font-size: 28px;
     font-family: Roboto, sans-serif;
 }
@@ -142,6 +202,7 @@ ul {
 }
 
 .card {
+    font-family: Roboto, sans-serif;
     background-color: #ffffff;
     box-shadow: 0 4px 28px 0 rgb(0 0 0 / 63%);
     transition: 0.3s;
@@ -150,12 +211,10 @@ ul {
     justify-content: center;
     flex-direction: column;
     display: flex;
-    width: 22%;
+    width: 25%;
     height: 242px;
-    margin-left: 8.6%;
-    margin-top: 2%;
+    margin: 2% 0% 0% 6%;
     float: left;
-    font-family: Roboto, sans-serif;
     position: relative;
 }
 
@@ -177,8 +236,8 @@ ul {
 }
 
 .card-description ul li {
-    margin: 10px 0px 10px 0px;
-    font-size: 19px;
+    margin: 10px 0px 12px 0px;
+    font-size: 18px;
 }
 
 .card:hover .card-description {
@@ -248,11 +307,11 @@ ul {
 }
 
 .slick-prev {
-    left: -160px;
+    left: -100px;
 }
 
 .slick-next {
-    right: -140px;
+    right: -80px;
 }
 
 .slick-dots {
@@ -313,47 +372,147 @@ footer .copyright {
     padding: 10px 0px;
 }
 
-@media (max-width: 600px) {
+/* Media Queries */
+@media (max-width: 1024px) {
     .head {
         position: relative;
     }
 
     header .title {
-        font-size: 0.7em;
-        margin: 12px 10px;
-        width: 195px;
-        padding: 0% 4%;
-        height: 50px;
+        font-size: 12px;
+        margin: 12px 40px;
+        width: 200px;
+        padding: 0px 26px;
+        height: 54px;
     }
 
-    .banner img {
-        height: 224px;
+    .menu-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     .list ul {
-        margin: 110px 0px 0px 10px;
-        font-size: 1em;
-        padding: 6px 10px;
+        font-size: 26px;
+        margin: 28% 0% 0% 6%;
     }
 
-    #services {
-        padding: 20px 0px 40px 0px;
+    #about h2 {
+        margin-bottom: 30px;
+    }
+
+    #about .about-description {
+        margin: 0px 40px;
+        font-size: 24px;
     }
 
     .card {
-        width: 41%;
-        height: 150px;
-        margin-left: 6%;
-        margin-top: 6%;
+        width: 38%;
+        margin: 4% 0% 0% 8%;
     }
 
-    .card img {
-        width: 72px;
-        margin-bottom: 10px;
+    .contact-info .info-item:first-child {
+        margin: 0px 40px 0px 0px;
     }
 
-    .card .info {
-        font-size: 16px;
-        text-align: center;
+    .slideshow .slick-prev, .slideshow .slick-next {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header .title {
+        font-size: 11px;
+        margin: 12px 24px;
+        padding: 0px 16px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    #about .about-description {
+        margin: 0px 20px;
+        font-size: 20px;
+    }
+
+    .card {
+        width: 44%;
+        margin: 4% 0% 0% 4%;
+    }
+
+    #contact .contact-info {
+        font-size: 18px;
+    }
+
+    .contact-info .info-item:first-child {
+        margin: 0px 30px 0px 10px;
+    }
+
+    .slick-list {
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-icon a {
+        display: none;
+    }
+
+    header .title {
+        font-size: 10px;
+        padding: 0px 2px;
+    }
+
+    .card {
+        width: 74%;
+        margin: 6% 0% 0% 14%;
+    }
+
+    #projects {
+        padding: 30px 0px 80px 0px;
+    }
+
+    .slick-dots {
+        bottom: -70px;
+    }
+
+    #contact {
+        padding: 40px 0px 20px 0px;
+    }
+
+    #contact h2 {
+        margin-bottom: 50px;
+    }
+
+    #contact .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info .info-item:first-child {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .contact-info .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 480px) {
+        .menu-icon {
+            margin: 22px 24px;
+        }
+
+        #about .about-description {
+            font-size: 18px;
+        }
     }
 }

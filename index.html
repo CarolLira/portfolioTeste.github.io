@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,900;1,500;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,7 +21,8 @@
         <div class="navbar">
             <div class="head">
                 <div class="menu-icon">
-                    <img src="images/menu.png">
+                    <img onclick="openNav()" src="images/menu.png">
+                    <a onclick="openNav()">Menu</a>
                 </div>
                 <div class="menu-items">
                     <ul>
@@ -36,6 +36,13 @@
             <div class="title">
                 <h1>Doutor Soluções</h1>
             </div>
+        </div>
+        <div id="side-navbar" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
         </div>
     </header>
     <main>
@@ -243,7 +250,9 @@
                 <div class="info-item">
                     <h3>Doutor Soluções</h3>
                     <p>CNPJ: 32.427.002/0001-58</p>
-                    <div class="cellphone"><img src="images/whatsapp.png" /><p>Cel: (11) 99501-6472</p></div>
+                    <div class="cellphone"><img src="images/whatsapp.png" />
+                        <p>Cel: (11) 99501-6472</p>
+                    </div>
                     <p>E-mail: doutorsolucoes@gmail.com</p>
                 </div>
                 <div class="info-item">
@@ -256,7 +265,9 @@
         </section>
     </main>
     <footer>
-        <div class="copyright"><p>© Doutor Soluções - 2020, todos os direitos reservados.</p></div>
+        <div class="copyright">
+            <p>© Doutor Soluções - 2020, todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="jquery/jquery.min.js"></script>
